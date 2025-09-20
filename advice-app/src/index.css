@@ -76,3 +76,129 @@ body {
 .auth-container button:hover {
   background-color: #45a049;
 }
+
+/* Landing page container */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f472b6, #ef4444, #facc15);
+  color: #fff;
+  text-align: center;
+}
+
+/* Hero Section */
+.landing h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.landing p {
+  font-size: 1.2rem;
+  max-width: 40rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* Auth Buttons */
+.landing .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.landing .flex button {
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.landing .btn-primary {
+  background-color: #fff;
+  color: #4f46e5;
+}
+
+.landing .btn-primary:hover {
+  background-color: #f3f4f6;
+}
+
+.landing .btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.landing .btn-outline:hover {
+  background: #fff;
+  color: #4f46e5;
+}
+
+/* Categories Section */
+.landing .flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.landing .flex-wrap a {
+  text-decoration: none;
+}
+
+.landing .flex-wrap div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing .flex-wrap div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Emoji in category cards */
+.landing .flex-wrap span {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Category title */
+.landing .flex-wrap h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landing h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing p {
+    font-size: 1rem;
+  }
+
+  .landing .flex-wrap div {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
