@@ -1,0 +1,18 @@
+.Advice-sample{
+    width:100%;
+    margin:auto;
+    border-radius:15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition:0.3s;
+    animation: fadeIn 1s;
+
+}
+.Advice-sample-category{
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+}
+.Advice-sample-desc{
+    color: black;
+
+}
